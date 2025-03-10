@@ -3,19 +3,30 @@ import forms from '@tailwindcss/forms';
 
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: [
-        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
-        './storage/framework/views/*.php',
-        './resources/views/**/*.blade.php',
-    ],
+  content: [
+    './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+    './storage/framework/views/*.php',
+    './resources/views/**/*.blade.php',
+  ],
 
-    theme: {
-        extend: {
-            fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-            },
-        },
+  theme: {
+    extend: {
+      colors: {
+        primary: '#ce7e5d', 
+        secondary: '#a2543d',
+        peach: '#d39a89',
+        coral: 'f7d1ba',
+        olive: '557570',
+        icemint: 'd6dcd8',
+      },
+      
+      // Adicionando fontes personalizadas
+      fontFamily: {
+        sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+      },
     },
+  },
 
-    plugins: [forms],
+  darkMode: "class",
+  plugins: [forms],
 };
