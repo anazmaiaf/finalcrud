@@ -7,26 +7,21 @@ export default {
     './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
     './storage/framework/views/*.php',
     './resources/views/**/*.blade.php',
+    './resources/js/**/*.js', 
   ],
 
   theme: {
     extend: {
       colors: {
-        primary: '#ce7e5d', 
-        secondary: '#a2543d',
-        peach: '#d39a89',
-        coral: 'f7d1ba',
-        olive: '557570',
-        icemint: 'd6dcd8',
+        background: '#EDE3D4', 
+        blush: '#F7A7B8',
       },
-      
-      // Adicionando fontes personalizadas
       fontFamily: {
         sans: ['Figtree', ...defaultTheme.fontFamily.sans],
       },
     },
   },
 
-  darkMode: "class",
+  darkMode: 'class',
   plugins: [forms],
 };
