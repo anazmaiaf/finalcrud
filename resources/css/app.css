@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-width {
+    width: 800px; /* ajuste o valor conforme necessário */
+}
